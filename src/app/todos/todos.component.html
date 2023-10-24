@@ -1,0 +1,40 @@
+<section class="container mt-4">
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg-8">
+      <input
+        type="text"
+        class="form-control form-control-lg bg-dark"
+        placeholder="Add your task"
+        [(ngModel)]="nameTask"
+        (keydown.enter)="addTask()"
+      />
+    </div>
+    <div class="col-lg-6 mt-3">
+      <div class="card p-3 bg-dark" *ngIf="list.length < 1">
+        <h5 class="text-danger">No task yet</h5>
+      </div>
+      <ul class="list-group">
+        <li
+          [ngClass]="item['_status'] ? 'bg-success' : 'bg-dark'"
+          class="list-group-item mt-1 text-white"
+          *ngFor="let item of list; let i = index"
+        >
+          <span class="checkbox" (click)="doneTask(i)"
+            ><i
+              class="fa-solid"
+              [ngClass]="item['_status'] ? 'fa-square-check' : 'fa-square'"
+            ></i>
+            {{ item["_name"] }}
+          </span>
+          <span class="icons">
+            <span class="edit" (click)="updateTask(i)" >
+              <i class="fa-solid fa-pencil"></i
+            ></span>
+            <span class="trash" (click)="deleteTask(i)"
+              ><i class="fa-solid fa-trash"></i></span
+          ></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

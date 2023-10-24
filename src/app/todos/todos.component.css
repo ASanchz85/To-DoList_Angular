@@ -1,0 +1,57 @@
+input {
+  color: #ddd;
+}
+
+input:focus {
+  color: #ddd;
+}
+
+input::placeholder {
+  color: #ddd;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.card > h5 {
+  text-align: center;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.icons > .trash {
+  margin-left: 10px;
+}
+
+.icons > .trash:hover {
+  color: crimson;
+}
+
+.icons > .edit:hover {
+  color: darkorange;
+}
+
+.checkbox > i {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.fa-square:hover {
+  color: rgb(15, 110, 15);
+}
+
+.fa-square-check:hover {
+  color: crimson;
+}

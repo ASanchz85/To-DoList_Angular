@@ -1,0 +1,16 @@
+.saveList {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  padding: 4px 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: #ddd;
+  box-shadow: 1px 1px 1px 1px #222;
+  font-weight: bold;
+}
+
+.saveList:hover {
+  box-shadow: 1px 1px 1px 1px #ddd;
+  border: 1px solid #ddd;
+}
