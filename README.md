@@ -1,3 +1,6 @@
+# To-Do Angular Project using Local Storage for persistence
+*First complete project from Angular Bootcamp*
+
 # TodoList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
